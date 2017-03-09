@@ -1,0 +1,151 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  header button.menu {
+    margin: 60px auto 60px 40px; }
+  header h1 {
+    font-size: 95px
+    /*125px*/ }
+  header button#hire, header button#learnMore {
+    max-width: 205px;
+    padding: 18px;
+    margin-bottom: 80px; }
+
+  section#ourTeam h4 {
+    margin: 150px auto 80px 0px;
+    font-size: 48px;
+    text-align: center; }
+
+  footer ul.learn, footer ul.about, footer ul.contact, footer ul.creative {
+    margin: 0px auto 0px 20px; }
+  footer h6 {
+    margin-bottom: 40px; } }
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  header button.menu {
+    margin: 30px auto 60px 70px; }
+  header h1 {
+    font-size: 125px; }
+  header button#hire, header button#learnMore {
+    max-width: 285px;
+    padding: 28px;
+    margin: 0px auto 190px auto; }
+
+  section#banner h3 {
+    margin: 50px auto 15px 20px;
+    font-size: 28px; }
+  section#banner h6 {
+    margin: 0px auto 95px 20px;
+    font-size: 22px; }
+  section#banner button.close {
+    margin: 50px 20px auto auto; }
+  section#banner button.start {
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 50px; }
+
+  section#ourTeam h4 {
+    margin: 150px auto 80px 140px;
+    font-size: 55.59px;
+    text-align: left; }
+
+  section#banner2 h2 {
+    margin: 50px auto 15px 20px; }
+  section#banner2 h6 {
+    margin: 0px auto 80px 20px; }
+  section#banner2 button.close {
+    margin: 45px 60px auto auto; }
+  section#banner2 button.join {
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 50px; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  header button.menu {
+    margin: 60px auto 210px 70px; }
+
+  section#banner h3 {
+    margin: 50px auto 15px 20px;
+    font-size: 45px; }
+  section#banner h6 {
+    margin: 0px auto 95px 20px;
+    font-size: 27px; }
+  section#banner button.close {
+    margin: 50px 20px auto auto; }
+  section#banner button.start {
+    font-size: 24px;
+    padding: 15px;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 40px; }
+
+  section#banner2 h2 {
+    margin: 50px auto 15px 20px; }
+  section#banner2 h6 {
+    margin: 0px auto 80px 20px; }
+  section#banner2 button.close {
+    margin: 50px 20px auto auto; }
+  section#banner2 button.join {
+    font-size: 24px;
+    padding: 15px;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 100px; } }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  section#banner h3 {
+    margin: 50px auto 15px 140px;
+    font-size: 62.5px; }
+  section#banner h6 {
+    margin: 0px auto 95px 140px;
+  }
+  section#banner button.close {
+    margin: 50px 10px auto auto; }
+  section#banner button.start {
+    margin-top: 100px; }
+
+  section#banner2 h2 {
+    margin: 50px auto 15px 140px; }
+  section#banner2 h6 {
+    margin: 0px auto 80px 140px; }
+  section#banner2 button.close {
+    margin: 50px 20px auto auto; }
+  section#banner2 button.join {
+    font-size: 24px;
+    padding: 35px;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 280px; } }

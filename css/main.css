@@ -1,0 +1,273 @@
+h1 {
+  font-size: 125px;
+  font-family: "SourceSans";
+  color: #ffffff; }
+
+/* SourcseSansProBlack */
+h2 {
+  font-size: 69.44px;
+  font-family: "HelveticaMedium";
+  color: #0066cc; }
+
+/* Helvetica nue */
+h3 {
+  font-size: 62.5px;
+  font-family: "HelveticaLight";
+  color: #ffffff; }
+
+/* HelveticaNeue Light */
+h4 {
+  font-size: 55.59px;
+  font-family: "HelveticaNeueLTS";
+  color: #333333; }
+
+/* helveticaNeueLTStd BdCn */
+h5 {
+  font-size: 41.67px;
+  font-family: "FreightItalic";
+  color: #ffffff; }
+
+/* FreightTextBookItalic */
+h6 {
+  font-size: 27.78px;
+  font-family: "HelveticaBold";
+  color: #ffffff; }
+
+/* HelveticaLTStd BoldCond */
+body {
+  font-size: 22.47px;
+  font-family: "HelveticaMedium";
+  color: #393c44; }
+
+/* HelveticaNeue */
+/***************************************************** HEADER *****************************************************/
+header div.container-fluid {
+  background: url("../images/headerbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+header button.menu {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 18px;
+  opacity: 0.5; }
+  header button.menu:hover {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out; }
+header h6 {
+  text-transform: uppercase;
+  margin: 0 auto; }
+header h1 {
+  text-transform: uppercase;
+  margin: 0 auto; }
+header h5 {
+  margin: 0 auto;
+  max-width: 650px; }
+header button.play {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 60px auto; }
+  header button.play:hover {
+    color: #b7adad;
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out; }
+  header button.play:active {
+    -webkit-transform: translate(2px, 2px);
+    -ms-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+header button#hire, header button#learnMore {
+  width: 100%;
+  max-width: 285px;
+  padding: 28px;
+  font-family: "SourceSans";
+  color: #363c4e;
+  font-size: 26.18px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  margin: 0px auto 190px auto; }
+  header button#hire:active, header button#learnMore:active {
+    background-color: #fff200;
+    -webkit-transform: translate(2px, 2px);
+    -ms-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  header button#hire:focus, header button#learnMore:focus {
+    background-color: #fff200; }
+
+/***************************************************** HEADER *****************************************************/
+/***************************************************** #aboutUs *****************************************************/
+section#aboutUs {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  overflow-x: hidden;
+  display: none; }
+  section#aboutUs div.animated:nth-child(2) {
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s; }
+  section#aboutUs div.animated:nth-child(3) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s; }
+  section#aboutUs img {
+    width: 100%;
+    height: auto;
+    border: none;
+    max-width: 456px; }
+  section#aboutUs div.imgcaption {
+    margin: 70px auto 0px auto;
+    /*HelveticaNeue light*/
+    color: #393c44;
+    font-size: 33.71px; }
+    section#aboutUs div.imgcaption p {
+      /*HelveticaNeue & Helvetica LightItalic*/
+      font-size: 22.47px;
+      max-width: 420px;
+      margin: 40px auto;
+      display: block; }
+      section#aboutUs div.imgcaption p a {
+        color: #d82028;
+        font-family: "HelveticaLightItalic"; }
+
+/***************************************************** #aboutUs *****************************************************/
+/***************************************************** #projectShowcase *****************************************************/
+#projectShowcase {
+  display: none; }
+  #projectShowcase h2 {
+    margin-bottom: 110px; }
+  #projectShowcase div.notebook {
+    visibility: hidden; }
+    #projectShowcase div.notebook img {
+      width: 100%;
+      height: auto;
+      max-width: 1550px; }
+
+/***************************************************** #projectShowcase *****************************************************/
+/***************************************************** banner1 *****************************************************/
+section#banner {
+  display: none;
+  background: -webkit-linear-gradient(225deg, #07cacf, #53a7c5);
+  background: linear-gradient(-135deg, #07cacf, #53a7c5);
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+  section#banner h3 {
+    margin: 100px auto 15px 140px; }
+  section#banner h6 {
+    margin: 0px auto 95px 140px; }
+  section#banner button.close {
+    margin: 45px 60px auto auto;
+    outline: none; }
+    section#banner button.close:active {
+      -webkit-transform: translate(2px, 2px);
+      -ms-transform: translate(2px, 2px);
+      transform: translate(2px, 2px); }
+  section#banner button.start {
+    font-family: "SourceSans";
+    padding: 35px;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 100px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase; }
+    section#banner button.start:active {
+      -webkit-transform: translate(2px, 2px);
+      -ms-transform: translate(2px, 2px);
+      transform: translate(2px, 2px); }
+
+/***************************************************** banner1 *****************************************************/
+/***************************************************** ourTeam *****************************************************/
+section#ourTeam {
+  /*display: none;*/
+  margin-bottom: 60px; }
+  section#ourTeam h4 {
+    color: #393c44; }
+  section#ourTeam h6 {
+    color: #393c44;
+    max-width: 400px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto; }
+    section#ourTeam h6 span {
+      display: block;
+      margin-bottom: 20px;
+      color: #f44336; }
+
+/***************************************************** ourTeam *****************************************************/
+/***************************************************** banner2 *****************************************************/
+section#banner2 {
+  display: none;
+  background: url("../images/banner2bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+  section#banner2 h2 {
+    color: #fff; }
+  section#banner2 button.close {
+    outline: none; }
+    section#banner2 button.close:active {
+      -webkit-transform: translate(2px, 2px);
+      -ms-transform: translate(2px, 2px);
+      transform: translate(2px, 2px); }
+  section#banner2 button.join {
+    font-family: "SourceSans";
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase; }
+    section#banner2 button.join:active {
+      -webkit-transform: translate(2px, 2px);
+      -ms-transform: translate(2px, 2px);
+      transform: translate(2px, 2px); }
+
+/***************************************************** banner2 *****************************************************/
+/***************************************************** FOOTER *****************************************************/
+footer {
+  background: url("../images/footerbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  footer ul {
+    padding: 0px; }
+    footer ul li {
+      list-style-type: none;
+      color: #b5b1b1;
+      margin: 35px auto;
+      font-family: "HelveticaLight"; }
+      footer ul li:first-child {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "HelveticaBold"; }
+      footer ul li a {
+        color: #b5b1b1; }
+        footer ul li a:hover, footer ul li a:active, footer ul li a:focus {
+          color: #fff;
+          text-decoration: none; }
+  footer ul.learn {
+    margin: 145px auto 75px 100px; }
+  footer ul.about, footer ul.contact, footer ul.creative {
+    margin: 145px auto; }
+  footer ul.about span {
+    background-color: #fff200;
+    color: #000000;
+    padding: 12px 17px;
+    border-radius: 25px;
+    margin-left: 25px; }
+  footer h6 {
+    margin-bottom: 100px;
+    color: #b5b1b1;
+    font-family: "Freight"; }
+    footer h6 span {
+      font-family: "FreightItalic"; }
+
+/***************************************************** FOOTER *****************************************************/

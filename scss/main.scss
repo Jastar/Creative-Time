@@ -1,0 +1,584 @@
+﻿@mixin font ($size:null, $height:null, $family:null, $color:null) {
+	font-size: $size;
+	line-height: $height;
+	font-family: $family;
+	color: $color;
+}
+
+h1 {@include font(125px, $color: #ffffff, $family: "SourceSans");} /* SourcseSansProBlack */
+h2 {@include font(69.44px, $color: #0066cc, $family: "HelveticaMedium");} /* Helvetica nue */
+h3 {@include font(62.5px, $color: #ffffff, $family: "HelveticaLight");} /* HelveticaNeue Light */
+h4 {@include font(55.59px, $color: #333333, $family: "HelveticaNeueLTS");} /* helveticaNeueLTStd BdCn */
+h5 {@include font(41.67px, $color: #ffffff, $family: "FreightItalic");} /* FreightTextBookItalic */
+h6 {@include font(27.78px, $color: #ffffff, $family: "HelveticaBold") } /* HelveticaLTStd BoldCond */
+
+body {@include font(22.47px, $color:#393c44, $family: "HelveticaMedium");} /* HelveticaNeue */
+
+
+
+
+
+
+
+
+/***************************************************** HEADER *****************************************************/
+	
+	header {
+		div.container-fluid {
+			background: url("../images/headerbg.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		button.menu {
+			background-color: #000000;
+			@include font($color: #fff);
+			border: none;
+			outline: none;
+			padding: 18px;
+			opacity: 0.5;
+				&:hover {
+					opacity: 0.7;
+					-webkit-transition: opacity 0.4s ease-in-out;
+					-o-transition: opacity 0.4s ease-in-out;
+					transition: opacity 0.4s ease-in-out;
+				}
+		}
+
+		h6 {
+			text-transform: uppercase;
+			margin: 0 auto;
+		}
+
+		h1 {
+			text-transform: uppercase;
+			margin: 0 auto;
+		}
+
+		h5 {
+			margin: 0 auto;
+			max-width: 650px;
+		}
+
+		button.play {
+			color: #fff;
+			background-color: transparent;
+			border: none;
+			outline: none;	
+			margin: 60px auto;
+				&:hover {
+					color: #b7adad;
+					-webkit-transition: color 0.4s ease-in-out;
+					-o-transition: color 0.4s ease-in-out;
+					transition: color 0.4s ease-in-out;
+				};
+				&:active {
+					-webkit-transform: translate(2px, 2px);
+					-ms-transform: translate(2px, 2px);
+					-o-transform: translate(2px, 2px);
+					transform: translate(2px, 2px);
+				};
+		}
+
+		button#hire, button#learnMore {
+			width: 100%;
+			max-width: 285px;
+			padding: 28px;
+			@include font($family: "SourceSans");
+			color: #363c4e;
+			font-size: 26.18px;
+			font-weight: bold;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			background-color: #fff;
+			margin: 0px auto 190px auto;
+				&:active {
+					background-color: #fff200;
+					-webkit-transform: translate(2px, 2px);
+					-ms-transform: translate(2px, 2px);
+					-o-transform: translate(2px, 2px);
+					transform: translate(2px, 2px);
+				};
+
+				&:focus {
+					background-color: #fff200;
+				};
+		}
+
+	}
+/***************************************************** HEADER *****************************************************/
+
+
+
+/***************************************************** #aboutUs *****************************************************/
+	section#aboutUs {
+		padding-top: 130px;
+		padding-bottom: 120px;
+		overflow-x: hidden;
+		display: none;
+
+		div.animated {
+			&:nth-child(2) {
+					-webkit-animation-delay: 0.25s;
+					-o-animation-delay: 0.25s;
+					animation-delay: 0.25s;
+				};
+			&:nth-child(3) {
+					-webkit-animation-delay: 0.5s;
+					-o-animation-delay: 0.5s;
+					animation-delay: 0.5s;
+				};
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			border: none;
+			max-width: 456px;
+		}
+
+		div.imgcaption {
+			margin: 70px auto 0px auto;
+			/*HelveticaNeue light*/
+			color: #393c44;
+			font-size: 33.71px;
+				p {
+					/*HelveticaNeue & Helvetica LightItalic*/
+					font-size: 22.47px;
+					max-width: 420px;
+					margin: 40px auto;
+					display: block;
+						a {
+							color: #d82028;
+							@include font($family: "HelveticaLightItalic");
+						}
+				}
+		}
+	}
+/***************************************************** #aboutUs *****************************************************/
+
+
+
+/***************************************************** #projectShowcase *****************************************************/
+	
+	#projectShowcase {
+		display: none;
+		h2 {
+			margin-bottom: 110px;
+		}
+
+		div.notebook {
+			visibility: hidden;
+			img {
+				width: 100%;
+				height: auto;
+				max-width: 1550px;
+
+				}
+
+			}
+		
+	}
+/***************************************************** #projectShowcase *****************************************************/
+
+
+
+/***************************************************** banner1 *****************************************************/
+	
+	section#banner {
+		display: none;
+		background: linear-gradient(-135deg, #07cacf,#53a7c5);
+		-webkit-animation-delay: 1s;
+		-o-animation-delay: 1s;
+		animation-delay: 1s;
+
+			h3 {
+				margin: 100px auto 15px 140px;
+			}
+
+			h6 {
+				margin: 0px auto 95px 140px;
+			}
+
+			button.close {
+				margin: 45px 60px auto auto;
+				outline: none;
+					&:active {
+						-webkit-transform: translate(2px, 2px);
+						-ms-transform: translate(2px, 2px);
+						-o-transform: translate(2px, 2px);
+						transform: translate(2px, 2px);
+					}
+				}
+
+			button.start {
+				@include font($family: "SourceSans");
+				padding: 35px;
+				width: 100%;
+				max-width: 280px;
+				margin-top: 100px;
+				background-color: #fff;
+				border: none;
+				outline: none;
+				border-radius: 5px;
+				text-transform: uppercase;
+					&:active {
+						-webkit-transform: translate(2px, 2px);
+						-ms-transform: translate(2px, 2px);
+						-o-transform: translate(2px, 2px);
+						transform: translate(2px, 2px);
+					}
+				}		
+		}
+/***************************************************** banner1 *****************************************************/
+
+
+
+/***************************************************** ourTeam *****************************************************/
+	section#ourTeam {
+		/*display: none;*/
+		margin-bottom: 60px;
+		h4 {
+			color: #393c44;
+		}
+
+		h6 {
+			color: #393c44;
+			max-width: 400px;
+			text-align: center;
+			font-weight: bold;
+			margin: 0 auto;
+					
+			span {
+				display: block;
+				margin-bottom: 20px;
+				color: #f44336;
+			}
+		}
+	}
+/***************************************************** ourTeam *****************************************************/
+
+
+
+/***************************************************** banner2 *****************************************************/
+	section#banner2 {
+		display: none;
+		background: url("../images/banner2bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		-webkit-animation-delay: 1s;
+		-o-animation-delay: 1s;
+		animation-delay: 1s;
+
+			h2 {
+				color: #fff;
+			}
+
+			button.close {
+				outline: none;
+					&:active {
+						-webkit-transform: translate(2px, 2px);
+						-ms-transform: translate(2px, 2px);
+						-o-transform: translate(2px, 2px);
+						transform: translate(2px, 2px);
+					}
+				}
+
+			button.join {
+				@include font($family: "SourceSans");
+				background-color: #fff;
+				border: none;
+				outline: none;
+				border-radius: 5px;
+				text-transform: uppercase;
+					&:active {
+						-webkit-transform: translate(2px, 2px);
+						-ms-transform: translate(2px, 2px);
+						-o-transform: translate(2px, 2px);
+						transform: translate(2px, 2px);
+					}
+				}		
+		}
+/***************************************************** banner2 *****************************************************/
+
+
+
+/***************************************************** FOOTER *****************************************************/
+	
+	footer {
+		background: url("../images/footerbg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+			ul {
+				padding: 0px;
+					li {
+						list-style-type: none;
+						color: #b5b1b1;
+						margin: 35px auto;
+						@include font($family: "HelveticaLight");
+							&:first-child {
+								color: #fff;
+								text-transform: uppercase;
+								@include font($family: "HelveticaBold");
+							};
+						a {
+							color: #b5b1b1;
+								&:hover, &:active, &:focus {
+									color: #fff;
+									text-decoration: none;
+								};
+						}
+					}
+			}
+
+			ul.learn {
+				margin: 145px auto 75px 100px;
+			}
+
+			ul.about, ul.contact, ul.creative, {
+				margin: 145px auto;
+			}
+
+			ul.about span {
+				background-color: #fff200;
+				color: #000000;
+				padding: 12px 17px;
+				border-radius: 25px;
+				margin-left: 25px;
+			}
+
+			h6 {
+				margin-bottom: 100px;
+				color: #b5b1b1;
+				@include font($family: "Freight");
+					span {
+						@include font($family: "FreightItalic");
+					}
+			}
+	}
+
+/***************************************************** FOOTER *****************************************************/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	header {
+		button.menu {
+			margin: 60px auto 60px 40px;
+		}
+
+		h1 {
+			font-size: 95px;
+			/*125px*/
+		}
+
+		button#hire, button#learnMore {
+			max-width: 205px;
+			padding: 18px;
+			margin-bottom: 80px;
+		}
+	}
+
+	section#ourTeam {
+		h4 {
+			margin: 150px auto 80px 0px;
+			font-size: 48px;
+			text-align: center;
+		}
+	}
+
+	section#banner2 {
+	} 
+
+	footer {
+
+		ul.learn, ul.about, ul.contact, ul.creative, {
+			margin: 0px auto 0px 20px;
+		}
+
+
+		h6 {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	header {
+		button.menu {
+			margin: 30px auto 60px 70px;
+		}
+
+		h1 {
+			font-size: 125px;
+		}
+
+		button#hire, button#learnMore {
+			max-width: 285px;
+			padding: 28px;
+			margin: 0px auto 190px auto;
+		}
+	}
+	
+	section#banner {
+		h3 {
+			margin: 50px auto 15px 20px;
+			font-size: 28px;
+		}
+
+		h6 {
+			margin: 0px auto 95px 20px;
+			font-size: 22px;
+		}
+
+
+		button.close {
+			margin: 50px 20px auto auto;
+			}
+
+		button.start {
+			font-size: 18px;
+			padding: 15px;
+			width: 100%;
+			max-width: 200px;
+			margin-top: 50px;
+		}	
+	}
+
+	section#ourTeam {
+		h4 {
+			margin: 150px auto 80px 140px;
+			font-size: 55.59px;
+			text-align: left;
+		}
+	}
+
+	section#banner2 {
+		h2 {
+			margin: 50px auto 15px 20px;
+		}
+
+		h6 {
+			margin: 0px auto 80px 20px;
+		}
+
+		button.close {
+			margin: 45px 60px auto auto;
+		}
+
+		button.join {
+			font-size: 18px;
+			padding: 15px;
+			width: 100%;
+			max-width: 200px;
+			margin-top: 50px;
+		}		
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	header {
+		button.menu {
+			margin: 60px auto 210px 70px;
+		}
+	}
+
+	section#banner {
+		h3 {
+			margin: 50px auto 15px 20px;
+			font-size: 45px;
+		}
+
+		h6 {
+			margin: 0px auto 95px 20px;
+			font-size: 27px;
+		}
+
+
+		button.close {
+			margin: 50px 20px auto auto;
+			}
+
+		button.start {
+			font-size: 24px;
+			padding: 15px;
+			width: 100%;
+			max-width: 280px;
+			margin-top: 40px;
+			}	
+	}
+
+	section#banner2 {
+		h2 {
+			margin: 50px auto 15px 20px;
+		}
+
+		h6 {
+			margin: 0px auto 80px 20px;
+		}
+
+		button.close {
+			margin: 50px 20px auto auto;
+			}
+
+		button.join {
+			font-size: 24px;
+			padding: 15px;
+			width: 100%;
+			max-width: 280px;
+			margin-top: 100px;
+		}		
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	section#banner {
+		h3 {
+			font-size: 62.5px;
+		}
+
+		button.close {
+			margin: 50px 10px auto auto;
+			}
+
+		button.start {
+			margin-top: 100px;
+			}	
+	}
+
+	section#banner2 {
+		h2 {
+			margin: 50px auto 15px 20px;
+		}
+
+		h6 {
+			margin: 0px auto 80px 20px;
+		}
+
+		button.close {
+			margin: 50px 20px auto auto;
+			}
+
+		button.join {
+			font-size: 24px;
+			padding: 35px;
+			margin-top: 100px;
+			width: 100%;
+			max-width: 280px;
+		}		
+	}
+}
