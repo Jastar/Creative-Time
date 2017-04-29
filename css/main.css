@@ -1,3 +1,5 @@
+@font-face { font-family: 'FontAwesome'; src: local('FontAwesome'); }
+
 h1 {
   font-size: 125px;
   font-family: "SourceSans";
